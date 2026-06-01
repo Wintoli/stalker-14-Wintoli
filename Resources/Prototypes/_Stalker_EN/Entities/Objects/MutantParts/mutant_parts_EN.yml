@@ -95,3 +95,17 @@
     size: Normal
     shape:
     - 0,0,0,1
+
+- type: entity
+  parent: BaseMutantPart
+  id: MutantPartPoltergeistEctoplasm
+  name: ectoplasm
+  components:
+  - type: STWeight
+    self: 0.1
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/MutantParts/poltergeist_ectoplasm.rsi
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,0,1
