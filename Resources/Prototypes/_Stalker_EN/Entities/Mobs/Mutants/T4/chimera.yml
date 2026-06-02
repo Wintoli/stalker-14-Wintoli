@@ -40,7 +40,7 @@
       maxAmount: 1
       prob: 1.0
     - id: MutantPartChimeraTooth
-      Amount: 2
+      amount: 2
   - type: STWeight
     self: 50
   - type: MovementSpeedModifier
