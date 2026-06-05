@@ -102,6 +102,64 @@
   - type: Sprite
     sprite: _Stalker_EN/Objects/Weapons/Guns/Rifles/_Skins/ak12_dolg.rsi
 
+# SCAR-H
+- type: entity
+  parent: STBaseWeaponRifleSCARH
+  id: STWeaponRifleSCARHClearSky
+  name: FN SCAR-H "Daylight"
+  suffix: ST, Skin
+  description: Belgian battle rifle chambered in 7.62x51mm NATO. Rare in the Zone, mostly used by western mercenaries. Powerful but maintenance-heavy weapon. This one seems to be custom painted in blue and gold.
+  components:
+  - type: Clothing
+    sprite: _Stalker_EN/Objects/Weapons/Guns/_Skins/scar_daylight.rsi
+  - type: Item
+    sprite: _Stalker_EN/Objects/Weapons/Guns/_Skins/scar_daylight.rsi
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Weapons/Guns/_Skins/scar_daylight.rsi
+
+- type: entity
+  parent: STBaseWeaponRifleSCARH
+  id: STWeaponRifleSCARHNocturne
+  name: FN SCAR-H "Nocturne"
+  description: A custom version of the belgian SCAR-H, chambered in 7.62x51mm NATO.
+  suffix: ST, Skin
+  components:
+  - type: Clothing
+    sprite: _Stalker_EN/Objects/Weapons/Guns/_Skins/scar_nocturne.rsi
+  - type: Item
+    sprite: _Stalker_EN/Objects/Weapons/Guns/_Skins/scar_nocturne.rsi
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Weapons/Guns/_Skins/scar_nocturne.rsi
+
+# SCAR-L
+- type: entity
+  parent: STWeaponRifleSCARL
+  id: STWeaponRifleSCARLClearSky
+  name: SCAR-L "Daylight"
+  suffix: ST, Skin
+  description: Belgian battle rifle chambered in 5.56x45mm NATO. Rare in the Zone, mostly used by western mercenaries. Powerful but maintenance-heavy weapon. This one seems to be custom painted in blue and gold.
+  components:
+  - type: Clothing
+    sprite: _Stalker_EN/Objects/Weapons/Guns/_Skins/scar_l_daylight.rsi
+  - type: Item
+    sprite: _Stalker_EN/Objects/Weapons/Guns/_Skins/scar_l_daylight.rsi
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Weapons/Guns/_Skins/scar_l_daylight.rsi
+
+- type: entity
+  parent: STWeaponRifleSCARL
+  id: STWeaponRifleSCARLNocturne
+  name: SCAR-L "Nocturne"
+  suffix: ST, Skin
+  description: A custom version of the belgian SCAR-L, chambered in 5.56x45mm NATO.
+  components:
+  - type: Clothing
+    sprite: _Stalker_EN/Objects/Weapons/Guns/_Skins/scar_l_nocturne.rsi
+  - type: Item
+    sprite: _Stalker_EN/Objects/Weapons/Guns/_Skins/scar_l_nocturne.rsi
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Weapons/Guns/_Skins/scar_l_nocturne.rsi
+
 # SMGS
 # ppsh
 - type: entity

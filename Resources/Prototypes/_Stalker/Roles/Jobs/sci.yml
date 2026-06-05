@@ -202,7 +202,7 @@
     legs: ClothingLegsJeansSandCargo
     shoes: STClothingShoesBootsCombatFilled
     torso: ClothingTorsoShirtWhiteScientific
-    outerClothing: ClothingOuterCoatLabSeniorResearcher
+    outerClothing: ClothingOuterCoatLabSeniorResearcherOpened #EN
     head: ClothingHeadHatBeretRND
     gloves: ClothingHandsGlovesLatex # EN
 

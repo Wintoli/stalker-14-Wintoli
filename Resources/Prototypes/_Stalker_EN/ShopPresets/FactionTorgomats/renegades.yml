@@ -134,6 +134,8 @@
       # 5,45x39
       Base545Mag10: 50 #T1
       545Mag30: 220 #T3
+      # 5.56
+      556Mag30: 350
       # Smg
       BizonMag: 650
       BasePPSHMag: 350 #T1
@@ -176,6 +178,11 @@
       545FMJBox: 500 # T2
       545HPBox: 725 # Mutant
       545PCBox: 1650 # T3
+      # 5.56
+      # 5.56
+      556FMJBox: 550 # T2
+      556M855Box: 1350 # T3
+      556WarmagBox: 600 # Mutant
       # 7.39
       739FMJBox: 1950 # T3
       # 7.54
@@ -249,7 +256,7 @@
       ClothingBackpackDuffelGreenStalker: 30 # T1
       ClothingBackpackTacticBeigeStalker: 450 # T2
       ClothingBackpackMercStalker: 750 # T3 - PVE
-      ClothingBackpackDuffelCommonStalker: 1000 # T3 - PVP
+      ClothingBackpackDuffelRenegade: 1000 # T3 - PVP
       # Belts
       ClothingBeltBandolierStalker: 20 # T1 - PVE
       ClothingBeltTarzanOrange: 200 # T1 - PVP
@@ -462,11 +469,13 @@
       # 5,45x39
       STWeaponRifleAKS74U: 3
       STWeaponRifleAKS74: 6
+      # 5.56
+      STWeaponRifleM16: 10
       # SMGS
       STWeaponSMGPPSh41: 5
       STWeaponSMGMP5: 4
       # 7,62x39
-      STWeaponRifleAKMC: 10 # Worse AKM version for cheaper
+      STWeaponRifleAKMC: 9 # Worse AKM version for cheaper
       STWeaponSniperSKS: 3
   - name: shop-category-magazines
     priority: 2
@@ -483,6 +492,8 @@
       918PBMBox: 3 # T3
       # 5.45
       545PCBox: 3 # T3
+      # 5.56
+      556M855Box: 3 # T3
       # 7.39
       739FMJBox: 4 # T3
       # 7.54

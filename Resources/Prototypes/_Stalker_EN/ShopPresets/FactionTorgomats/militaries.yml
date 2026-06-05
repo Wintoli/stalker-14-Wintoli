@@ -819,6 +819,7 @@
       ClothingHeadBandana2Military: 15
       ClothingHeadHatMilitary: 15
       ClothingHeadHatBeretBrigmedic: 100
+      ClothingEyesGogglesBerillBig: 250
 
   - name: "Shirt"
     priority: 2

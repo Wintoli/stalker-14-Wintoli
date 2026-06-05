@@ -235,7 +235,7 @@
         725PSTBox: 1450 # T3
         # 9.19
         919PSOGJBox: 100 # T1
-        919PSTBox: 300 # T2
+        919PSTBox: 250 # T2
         919PBMBox: 1450 # T3
         919RIPBox: 625 # Mutant
         # 9.18
@@ -334,7 +334,7 @@
         ##-------------------------------------------
         ClothingBackpackMercStalker: 500 # T3 PvE
         ClothingBackpackStalkerZaryaBlack: 650 # T3 PvP
-        ClothingBackpackDuffelCommonStalker: 1000 # T3 PvP, commented out as per Faction Lead request
+        ClothingBackpackDuffelBandits: 1000 # T3 PvP
         ##-------------------------------------------
           # Belts
         ClothingBeltBandolierStalker: 20 # T1 - PvE
@@ -376,6 +376,8 @@
         ZoneAnomalyDetectorAD1: 450 # T1
         TrashDetectorTier1: 200
         TrashDetectorTier2: 400
+        #TrashDetectorTier3: 1000
+        #TrashDetectorTier4: 12000
 
     - name: shop-category-utilities
       priority: 10

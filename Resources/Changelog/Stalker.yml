@@ -3126,5 +3126,35 @@
   id: 347
   time: '2026-05-30T19:57:48.772373+00:00'
   url: https://github.com/stalker-14-EN/stalker-14-EN/pull/921
+- author: nathan736
+  changes:
+  - message: adjusted neutral poncho hood
+    type: Tweak
+  - message: neutral faction chainmail hood,
+    type: Add
+  id: 348
+  time: '2026-06-01T19:28:58.453053+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/951
+- author: Cassandra
+  changes:
+  - message: Fuckass dosimeter now actually works
+    type: Fix
+  id: 349
+  time: '2026-06-02T22:09:18.849417+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/959
+- author: TheOverwatchVoice
+  changes:
+  - message: Changes Monolith Sphere-12 Sprite
+    type: Add
+  id: 350
+  time: '2026-06-04T22:20:07.332125+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/960
+- author: Llfiend
+  changes:
+  - message: Two new skins for SCAR-H and SCAR-L
+    type: Add
+  id: 351
+  time: '2026-06-05T18:52:11.628605+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/962
 Name: Stalker
 Order: -1
