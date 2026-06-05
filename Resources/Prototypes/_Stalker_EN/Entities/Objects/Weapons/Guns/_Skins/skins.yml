@@ -121,7 +121,7 @@
   parent: STBaseWeaponRifleSCARH
   id: STWeaponRifleSCARHNocturne
   name: FN SCAR-H "Nocturne"
-  description: A custom version of the belgian SCAR-H, chambered in 7.62x51mm NATO.
+  description: Belgian battle rifle chambered in 7.62x51mm NATO. Rare in the Zone, mostly used by western mercenaries. Powerful but maintenance-heavy weapon. This one seems to be custom painted black.
   suffix: ST, Skin
   components:
   - type: Clothing
@@ -151,7 +151,7 @@
   id: STWeaponRifleSCARLNocturne
   name: SCAR-L "Nocturne"
   suffix: ST, Skin
-  description: A custom version of the belgian SCAR-L, chambered in 5.56x45mm NATO.
+  description: Belgian battle rifle chambered in 5.56x45mm NATO. Rare in the Zone, mostly used by western mercenaries. Powerful but maintenance-heavy weapon. This one seems to be custom painted black.
   components:
   - type: Clothing
     sprite: _Stalker_EN/Objects/Weapons/Guns/_Skins/scar_l_nocturne.rsi

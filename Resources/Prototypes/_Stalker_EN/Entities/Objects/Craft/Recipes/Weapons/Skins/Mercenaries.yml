@@ -1,0 +1,19 @@
+- type: lightCraftingRecipe
+  id: STCraftSkinSTWeaponRifleSCARHMercenaries
+  results:
+  - STWeaponRifleSCARHNocturne
+  steps:
+    firstIngredient: STSkinsKitMercenary
+    secondIngredient: STWeaponRifleSCARH
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: STCraftSkinSTWeaponRifleSCARLMercenaries
+  results:
+  - STWeaponRifleSCARLNocturne
+  steps:
+    firstIngredient: STSkinsKitMercenary
+    secondIngredient: STWeaponRifleSCARL
+    keepFirst: true
+    time: 5
