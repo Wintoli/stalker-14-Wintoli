@@ -3163,6 +3163,7 @@
   id: 352
   time: '2026-06-06T09:26:23.630929+00:00'
   url: https://github.com/stalker-14-EN/stalker-14-EN/pull/963
+<<<<<<< HEAD
 - author: Llfiend
   changes:
   - message: Armor Tiers
@@ -3177,5 +3178,7 @@
   id: 354
   time: '2026-06-06T20:31:08.006305+00:00'
   url: https://github.com/stalker-14-EN/stalker-14-EN/pull/955
+=======
+>>>>>>> parent of 5c2e5c557d (Revert "Merge branch 'master' into mobdrops")
 Name: Stalker
 Order: -1
