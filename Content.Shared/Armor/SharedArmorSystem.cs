@@ -70,20 +70,84 @@ public abstract partial class SharedArmorSystem : EntitySystem
             return;
 
         // stalker-changes-start
-        if (args.Args.IgnoreResistors.Contains(uid))
+        if (component.ArmorClass < args.Args.DamageTier)
         {
             if (component.Modifiers == null)
                 return;
 
+            var armorTier = component.ArmorClass;
+            var damageTier = args.Args.DamageTier;
+            var diff = damageTier - armorTier;
+
             var modifiedModifiers = new DamageModifierSet
             {
                 Coefficients = new Dictionary<string, float>(component.Modifiers.Coefficients),
-                FlatReduction = new Dictionary<string, float>(component.Modifiers.FlatReduction)
+                FlatReduction = new Dictionary<string, float>(component.Modifiers.FlatReduction),
             };
 
+
+            // Each tier below the projectile will remove 20% of the armor coefficient effectiveness, additively
+            // 25% becomes 15% with a 2 tier difference, et cetera
             foreach (var key in modifiedModifiers.Coefficients.Keys.ToList())
             {
-                modifiedModifiers.Coefficients[key] = 1f;
+                var reducedCoefficient = (1f - modifiedModifiers.Coefficients[key]) / 5f;
+                for (var i = 0; i < diff; i++)
+                {
+                    modifiedModifiers.Coefficients[key] += reducedCoefficient;
+                    if (modifiedModifiers.Coefficients[key] >= 1f)
+                        modifiedModifiers.Coefficients[key] = 1f;
+                }
+            }
+
+            // It also reduces flat reduction by 1 per tier difference
+            foreach (var key in modifiedModifiers.FlatReduction.Keys.ToList())
+            {
+                for (var i = 0; i < diff; i++)
+                {
+                    modifiedModifiers.FlatReduction[key] -= 1;
+                    if (modifiedModifiers.FlatReduction[key] <= 0)
+                        modifiedModifiers.FlatReduction[key] = 0;
+                }
+            }
+
+            args.Args.Damage = DamageSpecifier.ApplyModifierSet(args.Args.Damage, modifiedModifiers);
+
+            return;
+        }
+
+        if (component.ArmorClass > args.Args.DamageTier)
+        {
+            if (component.Modifiers == null)
+                return;
+
+            var armorTier = component.ArmorClass;
+            var damageTier = args.Args.DamageTier;
+            var diff = armorTier - damageTier;
+
+            var modifiedModifiers = new DamageModifierSet
+            {
+                Coefficients = new Dictionary<string, float>(component.Modifiers.Coefficients),
+                FlatReduction = new Dictionary<string, float>(component.Modifiers.FlatReduction),
+            };
+
+            // Each tier stronger the armor is to the projectile adds 50% of its own protection on top
+            foreach (var key in modifiedModifiers.Coefficients.Keys.ToList())
+            {
+                var addedCoefficient =
+                    modifiedModifiers.Coefficients[key] + (1 - modifiedModifiers.Coefficients[key]) / 2;
+                for (var i = 0; i < diff; i++)
+                {
+                    modifiedModifiers.Coefficients[key] *= addedCoefficient;
+                }
+            }
+
+            // 1 flat per too
+            foreach (var key in modifiedModifiers.FlatReduction.Keys.ToList())
+            {
+                for (var i = 0; i < diff; i++)
+                {
+                    modifiedModifiers.FlatReduction[key] += 1;
+                }
             }
 
             args.Args.Damage = DamageSpecifier.ApplyModifierSet(args.Args.Damage, modifiedModifiers);
@@ -109,20 +173,68 @@ public abstract partial class SharedArmorSystem : EntitySystem
             return;
 
         // stalker-changes-start
-        if (args.Args.IgnoreResistors.Contains(uid))
+        if (component.ArmorClass < args.Args.DamageTier)
         {
             if (component.Modifiers == null)
                 return;
 
+            var armorTier = component.ArmorClass;
+            var damageTier = args.Args.DamageTier;
+            var diff = damageTier - armorTier;
+
             var modifiedModifiers = new DamageModifierSet
             {
                 Coefficients = new Dictionary<string, float>(component.Modifiers.Coefficients),
-                FlatReduction = component.Modifiers.FlatReduction
+                FlatReduction = new Dictionary<string, float>(component.Modifiers.FlatReduction),
             };
 
             foreach (var key in modifiedModifiers.Coefficients.Keys.ToList())
             {
-                modifiedModifiers.Coefficients[key] = 1f;
+                var reducedCoefficient = (1f - modifiedModifiers.Coefficients[key]) / 5f;
+                for (var i = 0; i < diff; i++)
+                {
+                    modifiedModifiers.Coefficients[key] += reducedCoefficient;
+                    if (modifiedModifiers.Coefficients[key] >= 1f)
+                        modifiedModifiers.Coefficients[key] = 1f;
+                }
+            }
+
+            foreach (var key in modifiedModifiers.FlatReduction.Keys.ToList())
+            {
+                for (var i = 0; i < diff; i++)
+                {
+                    modifiedModifiers.FlatReduction[key] -= 1;
+                    if (modifiedModifiers.FlatReduction[key] <= 0)
+                        modifiedModifiers.FlatReduction[key] = 0;
+                }
+            }
+
+            args.Args.Damage = DamageSpecifier.ApplyModifierSet(args.Args.Damage, modifiedModifiers);
+
+            return;
+        }
+
+        if (component.ArmorClass > args.Args.DamageTier)
+        {
+            if (component.Modifiers == null)
+                return;
+
+            var armorTier = component.ArmorClass;
+            var damageTier = args.Args.DamageTier;
+            var diff = armorTier - damageTier;
+
+            var modifiedModifiers = new DamageModifierSet
+            {
+                Coefficients = new Dictionary<string, float>(component.Modifiers.Coefficients),
+                FlatReduction = component.Modifiers.FlatReduction,
+            };
+
+            foreach (var key in modifiedModifiers.Coefficients.Keys.ToList())
+            {
+                for (var i = 0; i < diff; i++)
+                {
+                    modifiedModifiers.Coefficients[key] *= 0.6f;
+                }
             }
 
             args.Args.Damage = DamageSpecifier.ApplyModifierSet(args.Args.Damage, modifiedModifiers);

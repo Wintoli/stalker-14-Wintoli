@@ -40,39 +40,6 @@ public sealed class ProjectileSystem : SharedProjectileSystem
             || component.ProjectileSpent || component is { Weapon: null, OnlyCollideWhenShot: true })
             return;
 
-        // stalker-changes-start
-        var ignoreResitance = false;
-        List<EntityUid> ignore = new();
-        string[] slots = {
-            "outerClothing",
-            "head",
-            "cloak",
-            "eyes",
-            "ears",
-            "mask",
-            "jumpsuit",
-            "neck",
-            "back",
-            "belt",
-            "gloves",
-            "shoes",
-            "id",
-            "legs",
-            "torso"
-        };
-
-        foreach (var slot in slots)
-        {
-            if (_inventory.TryGetSlotEntity(args.OtherEntity, slot, out var entity) && TryComp<ArmorComponent>(entity, out var armorComp) && armorComp.ArmorClass.HasValue)
-                if (component.ProjectileClass >= armorComp.ArmorClass.Value)
-                    ignore.Add(entity.Value);
-        }
-
-        if (TryComp<DamageableComponent>(args.OtherEntity, out var damageable) && damageable.DamageModifierSetId != null)
-            if (_prototype.TryIndex(damageable.DamageModifierSetId, out var damageModifierSetPrototype))
-                ignoreResitance = component.ProjectileClass >= damageModifierSetPrototype.Class;
-        // stalker-changes-end
-
         var target = args.OtherEntity;
         // it's here so this check is only done once before possible hit
         var attemptEv = new ProjectileReflectAttemptEvent(uid, component, false);
@@ -95,7 +62,7 @@ public sealed class ProjectileSystem : SharedProjectileSystem
         }
         var deleted = Deleted(target);
 
-        if (_damageableSystem.TryChangeDamage((target, damageableComponent), ev.Damage, out var damage, component.IgnoreResistances || ignoreResitance, origin: component.Shooter, ignoreResistors: ignore) && Exists(component.Shooter)) // Stalker-Changes-IgnoreResistors
+        if (_damageableSystem.TryChangeDamage((target, damageableComponent), ev.Damage, out var damage, component.IgnoreResistances, damageTier: component.ProjectileClass) && Exists(component.Shooter)) // stalker-en-changes : damageTier
         {
             if (!deleted)
             {

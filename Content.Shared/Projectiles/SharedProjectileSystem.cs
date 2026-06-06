@@ -99,14 +99,15 @@ public abstract partial class SharedProjectileSystem : EntitySystem
             ? _damageableSystem.ChangeDamage(target,
                 ev.Damage,
                 component.IgnoreResistances,
-                origin: component.Shooter)
+                origin: component.Shooter,
+                damageTier: projectile.Comp1.ProjectileClass) // stalker-en-changes : damageTier
             : new DamageSpecifier(ev.Damage);
         var deleted = Deleted(target);
 
         // RMC14 this is already done on the server in TryChangeDamage.
         if (_net.IsClient)
         {
-            var modifyEvent = new DamageModifyEvent(ev.Damage, component.Shooter, new List<EntityUid> { uid });
+            var modifyEvent = new DamageModifyEvent(ev.Damage, component.Shooter, projectile.Comp1.ProjectileClass);
             RaiseLocalEvent(target, modifyEvent);
             modifiedDamage = modifyEvent.Damage;
         }

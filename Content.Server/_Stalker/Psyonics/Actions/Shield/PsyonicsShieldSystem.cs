@@ -39,9 +39,6 @@ public sealed class PsyonicsShieldSystem : BasePsyonicsActionSystem<PsyonicsActi
     }
     private void OnDamageModified(EntityUid uid, PsyonicsActionShieldComponent component, DamageModifyEvent args)
     {
-        if (args.IgnoreResistors.Contains(uid))
-            return;
-
         if (!component.IsActive)
             return;
         var initialHealth = component.Health;

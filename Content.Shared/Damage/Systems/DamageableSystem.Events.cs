@@ -216,7 +216,7 @@ public record struct BeforeDamageChangedEvent(DamageSpecifier Damage, EntityUid?
 ///
 ///     For example, armor.
 /// </summary>
-public sealed class DamageModifyEvent(DamageSpecifier damage, EntityUid? origin = null, List<EntityUid>? ignoreResistors = null)
+public sealed class DamageModifyEvent(DamageSpecifier damage, EntityUid? origin = null, int? damageTier = null) // stalker-en-changes : damageTier
     : EntityEventArgs, IInventoryRelayEvent
 {
     // Whenever locational damage is a thing, this should just check only that bit of armour.
@@ -224,7 +224,7 @@ public sealed class DamageModifyEvent(DamageSpecifier damage, EntityUid? origin 
 
     public readonly DamageSpecifier OriginalDamage = damage;
     public DamageSpecifier Damage = damage;
-    public List<EntityUid> IgnoreResistors = ignoreResistors ?? new List<EntityUid>();  // stalker-changes
+    public int? DamageTier = damageTier; // stalker-en-changes : damageTier
 }
 
 public sealed class DamageChangedEvent : EntityEventArgs
