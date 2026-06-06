@@ -3156,5 +3156,12 @@
   id: 351
   time: '2026-06-05T18:52:11.628605+00:00'
   url: https://github.com/stalker-14-EN/stalker-14-EN/pull/962
+- author: crocodilecarousel
+  changes:
+  - message: Karlik mob added
+    type: Add
+  id: 352
+  time: '2026-06-06T09:26:23.630929+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/963
 Name: Stalker
 Order: -1
