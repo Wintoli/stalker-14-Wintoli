@@ -4,8 +4,6 @@
   name: Ashtray
   suffix: ST, Mapping
   description: A tabletop ashtray. Apparently, someone has been smoking here recently.
-  placement:
-    mode: PlaceFree
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/ashtray.rsi
