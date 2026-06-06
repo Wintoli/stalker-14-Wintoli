@@ -110,6 +110,8 @@
     shape:
     - 0,0,0,1
 
+- type: entity
+  parent: BaseMutantPart
   id: MutantPartRustEgg
   name: Rust Egg
   components:
