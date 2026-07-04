@@ -111,7 +111,6 @@
     - 0,0,0,1
 
 - type: entity
-  parent: BaseMutantPart
   parent: BaseItem
   id: MutantPartRustEgg
   suffix: SH, OddEgg, MutantPart
