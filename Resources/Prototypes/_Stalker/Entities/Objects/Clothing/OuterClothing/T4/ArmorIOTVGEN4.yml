@@ -17,11 +17,11 @@
       flatReductions:
         Blunt: 7
         Slash: 2
-        Piercing: 10
+        Piercing: 8 # EN, 10 -> 8
       coefficients:
         Blunt: 0.80
         Slash: 0.80
-        Piercing: 0.55
+        Piercing: 0.60 # EN, 0.55 -> 0.60
   - type: GrantsArtifactSlots
     slots: 2 # EN
   - type: ExplosionResistance

@@ -1,5 +1,3 @@
-#-PIVO-UPDATE-
-
 - type: entity
   id: ZoneAnomalyBeer
   name: Beer
@@ -45,3 +43,47 @@
         - id: ZoneArtifactBeer
           tier: 1
           ratio: 25
+
+- type: entity
+  id: ZoneAnomalyPoppyFieldInert
+  name: Poppy Field Decor
+  parent: ZoneAnomalyBase
+  suffix: Stalker, Poppy Field, Anomaly
+  components:
+    - type: ZoneAnomalyUpdateTriggerCollide
+    - type: Sprite
+      sprite: _Stalker_EN/Objects/Anomalies/poppyfield.rsi
+      state: idle
+    - type: ZoneAnomaly
+      detectedLevel: 5
+    - type: STAnomalyTips
+      icon:
+        sprite: /Textures/_Stalker/Interface/Overlays/anomaly_tips.rsi
+        state: unknown
+    - type: ZoneArtifactSpawner
+      artifacts:
+      - id: null
+        ratio: 140
+      - id: ZoneArtifactPellicle
+        tier: 1
+        ratio: 15
+      - id: ZoneArtifactToxic
+        tier: 1
+        ratio: 15
+      #- id: ZoneArtifactWeirdFlower
+      #  tier: 3
+      #  ratio: 2
+
+# spawner for the petals
+# poppy field is mapping only so doing it like this is fine
+- type: entity
+  name: poppy petals (1-4) (100%) 30m
+  id: STTriggerPoppyPetals1410030
+  parent: STBaseTrigger1410030
+  suffix: ST, T0, Poppy Field, Trigger
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - STMobPoppyFirefiles
+    restricted:
+    - STMobPoppyFirefiles

@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: LocalTeleportBase
   id: LocalTeleportEcoBunker
   suffix: Ecologist
@@ -25,3 +25,11 @@
   - type: LinkByString
     linkString: YantarLabLadder
 
+- type: entity
+  parent: LocalTeleportBase
+  id: LocalTeleportNeutralStairs
+  suffix: Neutral
+  name: Neutral Base Stairs
+  components:
+  - type: LinkByString
+    linkString: NeutralBaseStairs

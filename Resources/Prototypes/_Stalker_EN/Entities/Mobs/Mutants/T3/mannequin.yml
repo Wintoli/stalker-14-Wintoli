@@ -1,10 +1,10 @@
-#Silent Hill Mannequin made for special events by Nahuel
+#Silent Hill Mannequin made by Nahuel
 - type: entity
   parent: BaseMobMutant
   id: STMobMutantMannequin
   name: Mannequin
   suffix: ST, T3, SH
-  description: Do they look like monsters to you?
+  description: A creature composed of two lower halves of what looks like mannequins connected by the waist. It has bandages wrapped around some parts.
   components:
   - type: Sprite
     layers:
@@ -38,29 +38,29 @@
     bloodMaxVolume: 100
   - type: SlowOnDamage
     speedModifierThresholds:
-      400: 0.8
+      400: 1.2
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 400
+        damage: 500
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           path: /Audio/_Stalker_EN/Mutants/mannequin_death.ogg
   - type: Butcherable
     spawned:
-    - id: STFoodMeatSalo #Or some other kind of meat? or a new part, and parent it so it's easy to implement
+    - id: STCraftPlasticFittingT2 # I'd like to make an actual part in the future
       amount: 1
   - type: STWeight
     self: 65
   - type: MovementSpeedModifier
-    baseWalkSpeed: 2.8
-    baseSprintSpeed: 4
+    baseWalkSpeed: 2.5
+    baseSprintSpeed: 3.6
   - type: MeleeWeapon
     attackRate: 0.7
     angle: 30
-    range: 1.8 # long leg of the law
+    range: 1.5
     soundHit:
           path: /Audio/_Stalker_EN/Mutants/mannequin_hit.ogg
           params:
@@ -73,26 +73,26 @@
     wideAnimation: WeaponArcSmash
     damage:
       types:
-        Blunt: 55 # Hurting you hurting you hurting you
+        Blunt: 45
   - type: BonusMeleeDamage
     heavyDamageMultiplier: 1.5
   - type: StaminaDamageOnHit
-    damage: 45
+    damage: 40
   - type: Puller
     needsHands: false
   - type: HTN
     rootTask:
-      task: STSimpleHostileCompound
+      task: STAmbushHostileCompound # stand still until a player comes within VisionRadius (or it's damaged), then hunt like a normal mutant
     blackboard:
       VisionRadius: !type:Single
-        20
+        2 # proximity trigger: won't notice players past 3 tiles
       AggroVisionRadius: !type:Single
-        3
-  - type: MeleeThrowOnHit # Could add some oomph to it, less than bears
-    speed: 3
-    distance: 0.5
+        20 # once provoked, keeps hunting out to 20 tiles before re-freezing
+  #- type: MeleeThrowOnHit
+  #  speed: 3
+  #  distance: 0.5
   - type: NPCRetaliation
-    attackMemoryLength: 30 # 30 what?
+    attackMemoryLength: 20 # 20 what?
   - type: NpcFactionMember
     factions:
     - Mutated

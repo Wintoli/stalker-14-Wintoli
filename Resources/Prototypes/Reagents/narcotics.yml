@@ -319,6 +319,7 @@
   color: "#000000"
   boilingPoint: 255.0
   meltingPoint: 36.0
+  evaporationSpeed: 0.15 # stalker EN
   metabolisms:
     Narcotic:
       effects:

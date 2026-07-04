@@ -151,30 +151,30 @@
       items:
         #7mm
         7mmBuckshotBox: 45 # T0
-        6mmBuckshotBox: 255 # T1
+        6mmBuckshotBox: 150 # T1
         # 5.45
-        545FMJBox: 700 # T2
-        545HPBox: 485 # Mutant
+        545FMJBox: 425 # T2
+        545HPBox: 400 # Mutant
         # 7.39
-        739HPBox: 700 # Mutant
+        739HPBox: 450 # Mutant
         # 7.54
-        754HPBox: 800 # Mutant
+        754HPBox: 600 # Mutant
         # 9.18
-        918PGJBox: 100 # T1
-        918PSTBox: 300 # T2
-        918SP7Box: 595 # Mutant
+        918PGJBox: 80 # T1
+        918PSTBox: 150 # T2
+        918SP7Box: 425 # Mutant
         # 9.19
-        919PSOGJBox: 100 # T1
-        919PSTBox: 300 # T2
-        919RIPBox: 595 # Mutant
+        919PSOGJBox: 80 # T1
+        919PSTBox: 150 # T2
+        919RIPBox: 425 # Mutant
         # 7.25
-        725PBox: 100 # T1
-        725LRNPCBox: 595 # Mutant
-        725PTBox: 300 # T2
+        725PBox: 75 # T1
+        725LRNPCBox: 450 # Mutant
+        725PTBox: 150 # T2
         # .45
-        45ACPLFMJBox: 100 # T1
-        45ACPRIPBox: 625 # Mutant
-        45ACPMFMJBox: 300 # T2
+        45ACPLFMJBox: 75 # T1
+        45ACPRIPBox: 500 # Mutant
+        45ACPMFMJBox: 225 # T2
     - name: shop-category-medicine
       priority: 4
       items:
@@ -246,10 +246,10 @@
     # ---GRAVITY---
     #Т2
     ZoneArtifactFireball: 0
-    ZoneArtifactBattery: 2
+    ZoneArtifactBattery: 1
     ZoneArtifactAmoeba: 2
     ZoneArtifactBlood: 3
-    ZoneArtifactEye: 2
+    ZoneArtifactEye: 1
     #T3
     ArtMedusa: 0
     ZoneArtifactVyvert: 0
@@ -263,23 +263,40 @@
     ZoneArtifactGoldfish: 125
     ZoneArtifactSpring: 65
     ZoneArtifactStuntman: 65
+    ZoneArtifactDarkCube: 0
     # ---THERMAL---
     #T3
     ZoneArtifactFlame: 10
+    ZoneArtifactRock: 10
+    ZoneArtifactBunch: 5
     #T4
     ZoneArtifactCristall: 20
+    ZoneArtifactRoot: 20
+    ZoneArtifactSun: 20
     #T5
     ZoneArtifactLithosphere: 60
     # ---ELECTRICAL---
     #T3
     ArtMoon: 20
     ZoneArtifactFlash: 15
+    ZoneArtifactAccumulator: 10
+    #T4
+    ZoneArtifactDiamond: 20
     #T5
     ZoneArtifactIce: 60
     ZoneArtifactTesla: 60
     # ---SPATIAL---
+    #T1
+    ZoneArtifactFloodlight: 1
+    #T3
+    ZoneArtifactArf: 10
+    ZoneArtifactThorn: 15
+    #T4
+    ZoneArtifactAtom: 20
+    ZoneArtifactCompass: 30
     #T5
     ZoneArtifactSoul: 60
+    ZoneArtifactCrucifix: 60
     # ---ACIDIC---
     #T3
     ZoneArtifactMeat: 10
@@ -302,7 +319,7 @@
     FoodMeatSpiderLeg: 0
     MutantPartCatGland: 0
     #T2 -------- Health * 1.8
-    MutantPartLeshiyRoot: 7
+    MutantPartLeshiyRoot: 5
     MutantPartPseudodogTail: 0
     MutantPartSnorkFoot: 0
     MutantPartPsiDogTail: 7
@@ -316,7 +333,7 @@
     ClothingMaskChimera: 35
     MutantPartChimeraTooth: 60
     MutantPartIzlomArm: 18
-    MutantPartBurerBrain: 3
+    MutantPartBurerBrain: 5
     MutantPartControllerBrain: 5
 
   categories:
@@ -325,13 +342,14 @@
     items:
       # Melee
       # Shotguns
-      STWeaponShotgunProtecta: 75
+      STWeaponShotgunProtecta: 45
       # Pistols
       # SMGs
       # Rifles
+      STWeaponRifleM14: 150
       # Snipers
-      STWeaponSniperVepr: 90
-      STWeaponSniperVSS: 250
+      STWeaponSniperVepr: 225
+      STWeaponSniperVSS: 525
   - name: shop-category-magazines
     priority: 2
     items:
@@ -345,13 +363,14 @@
     priority: 3
     items:
       # buckshot
-      8mmBuckshotBox: 4 # T2
+      6mmBuckshotBoxCink: 40 # Express
+      8mmBuckshotBoxCink: 50 # Magnum
       # 7.62x54
       754HPBox: 4 # mutant
       754FMJBox: 10 # T3
       # 9x39
-      STBox9x39SP5: 15 # T2
-      STBox9x39PAB9: 25 # T3
+      STBox9x39SP5: 20 # T2
+      STBox9x39PAB9: 30 # T3
   - name: shop-category-medicine
     priority: 4
     items:
@@ -373,16 +392,16 @@
     items:
       # Helmets
       # OuterClothing
-      STClothingOuterArmorIOTVBlack: 25
-      STClothingOuterIOTVGEN4: 30
-      ClothingOuterArmorHazmatRf: 150
+      STClothingOuterArmorIOTVBlack: 165
+      STClothingOuterIOTVGEN4: 240
+      ClothingOuterArmorHazmatRf: 225
   - name: shop-category-storage-and-containers
     priority: 7
     items:
       # BackPacks
-      ClothingBackpackDuffelMilitaryOlive: 60
-      ClothingBackpackDuffelSuperStalker: 90
-      ClothingBackpackDuffelSuperStalkerGray: 90
+      ClothingBackpackDuffelMilitaryOlive: 70
+      ClothingBackpackDuffelSuperStalker: 100
+      ClothingBackpackDuffelSuperStalkerGray: 100
   - name: shop-category-raincoats-and-gasmasks
     priority: 8
     items:
@@ -403,7 +422,6 @@
       STRuggedPdaEN: 300
 
 # LIMANSK
-# this one isnt done yet
 - type: shopPreset
   id: NpcForesterLimanskEN
   minSellPrice: 1
@@ -411,10 +429,10 @@
     # ---GRAVITY---
     #Т2
     ZoneArtifactFireball: 0
-    ZoneArtifactBattery: 3
-    ZoneArtifactAmoeba: 3
-    ZoneArtifactBlood: 5
-    ZoneArtifactEye: 3
+    ZoneArtifactBattery: 2
+    ZoneArtifactAmoeba: 4
+    ZoneArtifactBlood: 4
+    ZoneArtifactEye: 2
     #T3
     ArtMedusa: 0
     ZoneArtifactVyvert: 0
@@ -428,23 +446,40 @@
     ZoneArtifactGoldfish: 175
     ZoneArtifactSpring: 100
     ZoneArtifactStuntman: 100
+    ZoneArtifactDarkCube: 0 # its too scary
     # ---THERMAL---
     #T3
     ZoneArtifactFlame: 15
+    ZoneArtifactRock: 15
+    ZoneArtifactBunch: 10
     #T4
     ZoneArtifactCristall: 30
+    ZoneArtifactRoot: 30
+    ZoneArtifactSun: 30
     #T5
-    ZoneArtifactLithosphere: 100
+    ZoneArtifactLithosphere: 110
     # ---ELECTRICAL---
     #T3
     ArtMoon: 20
     ZoneArtifactFlash: 20
+    ZoneArtifactAccumulator: 15
+    #T4
+    ZoneArtifactDiamond: 35
     #T5
-    ZoneArtifactIce: 100
-    ZoneArtifactTesla: 100
+    ZoneArtifactIce: 80
+    ZoneArtifactTesla: 80
     # ---SPATIAL---
+    #T1
+    ZoneArtifactFloodlight: 1
+    #T3
+    ZoneArtifactArf: 15
+    ZoneArtifactThorn: 20
+    #T4
+    ZoneArtifactAtom: 35
+    ZoneArtifactCompass: 45 # more valuable to forester specifically
     #T5
-    ZoneArtifactSoul: 100
+    ZoneArtifactSoul: 80
+    ZoneArtifactCrucifix: 80
     # ---ACIDIC---
     #T3
     ZoneArtifactMeat: 20
@@ -467,7 +502,7 @@
     FoodMeatSpiderLeg: 0
     MutantPartCatGland: 0
     #T2 -------- Health * 1.8
-    MutantPartLeshiyRoot: 10
+    MutantPartLeshiyRoot: 8
     MutantPartPseudodogTail: 0
     MutantPartSnorkFoot: 0
     MutantPartPsiDogTail: 10
@@ -477,7 +512,7 @@
     MutantPartOraculeEye: 30
     MutantPartPseudogiantHeart: 320
     MutantPartZombieHand: 0
-    MutantPartBloodsuckerHead: 130
+    MutantPartBloodsuckerHead: 80
     ClothingMaskChimera: 50
     MutantPartChimeraTooth: 100
     MutantPartIzlomArm: 35
@@ -490,31 +525,33 @@
     items:
       # Melee
       # Shotguns
-      STWeaponShotgunProtecta: 75
-      STWeaponShotgunSaiga12: 120
+      STWeaponShotgunProtecta: 40
+      STWeaponShotgunSaiga12: 225
       # Pistols
-      WeaponPistolStalkerLP08: 25
+      WeaponPistolStalkerLP08: 90
       # SMGs
       # Rifles
-      STWeaponRifleStalkerAek971: 250
+      STWeaponRifleM14: 125
+      STWeaponRifleStalkerAek971: 225
       # Snipers
-      STWeaponSniperVepr: 75
-      STWeaponSniperVSS: 200
-      STWeaponSniperSVDS: 500
+      STWeaponSniperVepr: 200
+      STWeaponSniperSVDS: 425
+      STWeaponSniperVSS: 500
   - name: shop-category-magazines
     priority: 2
     items:
       # saiga-12
+      Saiga1270Mag10: 10
       Saiga1270Drum: 25
       # 5.45x39
       545Mag20: 15
       545Mag30: 25
       545Mag45: 40
       # 7.62x54
-      Base754Mag5: 2
+      Base754Mag5: 5
       754Mag10: 15
       # 9x19
-      LP08Drum: 5
+      LP08Drum: 10
       # 9x39
       Base939Mag10: 10
       939Mag20: 25
@@ -522,15 +559,16 @@
     priority: 3
     items:
       # buckshot
-      8mmBuckshotBox: 4 # T2
+      6mmBuckshotBoxCink: 25 # Express
+      8mmBuckshotBoxCink: 40 # Magnum
       # 5.45x39
-      545HPBox: 12 # mutant
-      545PCBox: 15 # T3
+      545HPBoxCink: 35 # mutant
+      545PCBoxCink: 45 # T3
       # 7.62x54
       754HPBox: 4 # mutant
       754FMJBox: 10 # T3
       # 9x19
-      919PBMBox: 8 # T3
+      919PBMBoxCink: 45 # T3
       # 9x39
       STBox9x39SP5: 15 # T2
       STBox9x39PAB9: 25 # T3
@@ -540,7 +578,7 @@
       MedkitMilitary: 2
       MedkitScience: 4
       MedkitElite: 10
-      MedkitLAR: 18
+      MedkitLAR: 15
       ThermoOintment: 3
       STOintmentGood: 3
       STTourniquet: 2
@@ -554,13 +592,14 @@
     priority: 6
     items:
       # Helmets
-      ClothingHeadHelmetBerill5MMilitary: 20
-      ClothingHeadHelmetUlach: 75
+      ClothingHeadHelmetBerill5MMilitary: 30
+      ClothingHeadHelmetUlach: 155
       # OuterClothing
-      STClothingOuterArmorIOTVBlack: 25
-      STClothingOuterIOTVGEN4: 30
-      ClothingOuterArmorHazmatRf: 125
-      STClothingOuterArmorVeryHeavy: 350
+      STClothingOuterArmorIOTVBlack: 140
+      STClothingOuterIOTVGEN4: 215
+      ClothingOuterArmorHazmatRf: 200
+      ClothingOuterArmorStalkerCombat: 350
+      STClothingOuterArmorVeryHeavy: 450
   - name: shop-category-storage-and-containers
     priority: 7
     items:
@@ -568,6 +607,7 @@
       ClothingBackpackDuffelMilitaryOlive: 60
       ClothingBackpackDuffelSuperStalker: 90
       ClothingBackpackDuffelSuperStalkerGray: 90
+      ClothingBeltWebbingDoubleStalkerZaryaSmall: 10
   - name: shop-category-raincoats-and-gasmasks
     priority: 8
     items:
@@ -579,7 +619,7 @@
   - name: shop-category-research-equipment
     priority: 9
     items:
-      BoxArtcont1: 20
+      BoxArtcont1: 40
       BoxArtcont: 5
       STBoltBagOliveGrayFilledGolden: 300
       TrashDetectorTier4: 80

@@ -50,3 +50,5 @@
     sprite: _Stalker/Objects/Clothing/hats/1SHBandit.rsi
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/hats/1SHBandit.rsi
+  - type: ExplosionResistance
+    damageCoefficient: 0.85

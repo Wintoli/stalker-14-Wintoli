@@ -1,4 +1,4 @@
-﻿Entries:
+Entries:
 - author: teecoding
   changes:
   - message: S.T.A.L.K.E.R. 14 changelog tab for EN fork changes
@@ -3098,7 +3098,7 @@
   url: https://github.com/stalker-14-EN/stalker-14-EN/pull/932
 - author: Nox38
   changes:
-  - message: All SEVAs now get 5 artifact slots, instead of just Eco SEVAs.
+  - message: All SEVAs now get 4 artifact slots, including the ones from Eco.
     type: Tweak
   id: 344
   time: '2026-05-27T18:06:54.877866+00:00'
@@ -3163,7 +3163,6 @@
   id: 352
   time: '2026-06-06T09:26:23.630929+00:00'
   url: https://github.com/stalker-14-EN/stalker-14-EN/pull/963
-<<<<<<< HEAD
 - author: Llfiend
   changes:
   - message: Armor Tiers
@@ -3178,7 +3177,371 @@
   id: 354
   time: '2026-06-06T20:31:08.006305+00:00'
   url: https://github.com/stalker-14-EN/stalker-14-EN/pull/955
-=======
->>>>>>> parent of 5c2e5c557d (Revert "Merge branch 'master' into mobdrops")
+- author: simpleleaf0
+  changes:
+  - message: Winterized Groza sprites and entries
+    type: Add
+  - message: Winterized Abakan sprites and entries
+    type: Add
+  id: 355
+  time: '2026-06-08T01:07:55.800205+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/937
+- author: teecoding
+  changes:
+  - message: Mannequins now stay frozen until you get close or hit them, then spring
+      to life and chase.
+    type: Add
+  id: 356
+  time: '2026-06-08T21:01:08.309354+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/969
+- author: crocodilecarousel
+  changes:
+  - message: 'Updated Rule 6: Zone Rulings'
+    type: Tweak
+  id: 357
+  time: '2026-06-08T21:05:35.130444+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/968
+- author: Aliwenko
+  changes:
+  - message: fog mutants and parts
+    type: Tweak
+  - message: mutetoxin evaporation
+    type: Tweak
+  id: 358
+  time: '2026-06-08T23:14:09.864785+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/970
+- author: Wintoli
+  changes:
+  - message: The G-36 can now equip a silencer.
+    type: Tweak
+  id: 359
+  time: '2026-06-09T22:44:45.279270+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/964
+- author: dallaszzz
+  changes:
+  - message: Wild territory
+    type: Add
+  - message: Moved yantar teleports around
+    type: Tweak
+  id: 360
+  time: '2026-06-10T03:12:54.761086+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/971
+- author: Aliwenko
+  changes:
+  - message: Niebla
+    type: Add
+  id: 361
+  time: '2026-06-10T04:31:51.201612+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/972
+- author: Aliwenko
+  changes:
+  - message: Niebla
+    type: Add
+  id: 362
+  time: '2026-06-10T13:28:21.017106+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/973
+- author: TheOverwatchVoice
+  changes:
+  - message: Adds a new mantle to the Monolith faction.
+    type: Add
+  id: 363
+  time: '2026-06-10T23:43:56.553652+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/974
+- author: AnryReal and @Carousel
+  changes:
+  - message: Poppu field spawn angry-flies without sleep effect attack
+    type: Add
+  id: 364
+  time: '2026-06-11T09:20:53.586814+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/952
+- author: Aliwenko
+  changes:
+  - message: move niebla
+    type: Tweak
+  id: 365
+  time: '2026-06-11T11:40:01.931063+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/975
+- author: dallaszzz
+  changes:
+  - message: Fixes yantar teleports
+    type: Fix
+  id: 366
+  time: '2026-06-11T16:20:13.200148+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/976
+- author: cris5311
+  changes:
+  - message: fixed a changelog message
+    type: Fix
+  id: 367
+  time: '2026-06-13T01:19:04.659642+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/977
+- author: dallaszzz
+  changes:
+  - message: renames all maps to use english names and standardizes them
+    type: Tweak
+  - message: some yantar map changes
+    type: Tweak
+  - message: fixes local teleporters not working as intended
+    type: Fix
+  id: 368
+  time: '2026-06-15T01:52:25.843408+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/980
+- author: dallaszzz
+  changes:
+  - message: Ports tons of mapping entitys from ru
+    type: Add
+  - message: Ports new cbrn suit sprites from ru
+    type: Add
+  - message: Ports new lobby screens from ru
+    type: Add
+  id: 369
+  time: '2026-06-15T02:09:13.123993+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/981
+- author: crocodilecarousel
+  changes:
+  - message: Warzone 'Cordon Pig Farm'
+    type: Add
+  - message: Igor Warzone point shop
+    type: Add
+  id: 370
+  time: '2026-06-17T16:28:58.690719+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/982
+- author: SnekiChaos
+  changes:
+  - message: Minor Yantar Eco Bunker fixes
+    type: Add
+  id: 371
+  time: '2026-06-20T11:02:24.764839+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/987
+- author: crocodilecarousel
+  changes:
+  - message: New glock skin, sprites by qwertymen41
+    type: Add
+  id: 372
+  time: '2026-06-22T00:55:28.706297+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/988
+- author: TheCookieChicken
+  changes:
+  - message: Fixed the copyright in the meta.json
+    type: Fix
+  id: 373
+  time: '2026-06-22T00:58:48.640472+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/990
+- author: TheCookieChicken
+  changes:
+  - message: Winterized Equipment can be Irradiated
+    type: Add
+  - message: Winterized AN-91 and Groza can be cleansed/Irradiated
+    type: Tweak
+  id: 374
+  time: '2026-06-22T16:01:27.913913+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/989
+- author: Nox38
+  changes:
+  - message: Renamed and removed armor from kevlar raincoat variants.
+    type: Tweak
+  id: 375
+  time: '2026-06-23T17:27:51.296256+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/979
+- author: Llfiend
+  changes:
+  - message: New option in the STALKER EN tab for hiding PDA online status
+    type: Add
+  id: 376
+  time: '2026-06-24T19:09:27.217340+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/992
+- author: dallaszzz
+  changes:
+  - message: FINALLY fixed the devious neutral stair teleport
+    type: Fix
+  id: 377
+  time: '2026-06-25T05:28:04.756721+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/997
+- author: Mooringt
+  changes:
+  - message: military badger
+    type: Add
+  id: 378
+  time: '2026-06-25T07:57:41.637520+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/995
+- author: crocodilecarousel
+  changes:
+  - message: Mask despawn time increased to 3 hours
+    type: Tweak
+  id: 379
+  time: '2026-06-25T14:45:03.013175+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/1000
+- author: GoidaYAMLWarrior
+  changes:
+  - message: A beret for renegades.
+    type: Add
+  id: 380
+  time: '2026-06-25T14:49:06.935763+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/996
+- author: Aliwenko
+  changes:
+  - message: Shoppa dolla faction vendors
+    type: Add
+  - message: Forester inventory
+    type: Tweak
+  - message: Faction vendors
+    type: Tweak
+  id: 381
+  time: '2026-06-25T18:19:34.162947+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/1002
+- author: dallaszzz
+  changes:
+  - message: Warfare Announcer
+    type: Add
+  id: 382
+  time: '2026-06-26T09:48:04.766587+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/1005
+- author: Mooringt
+  changes:
+  - message: Tactical Rigs
+    type: Add
+  id: 383
+  time: '2026-06-26T10:07:51.490413+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/1007
+- author: dallaszzz
+  changes:
+  - message: Moves eco and military back into agroprom
+    type: Tweak
+  id: 384
+  time: '2026-06-26T16:09:42.589045+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/1006
+- author: Mooringt , altosnoew
+  changes:
+  - message: Neutral Badger
+    type: Add
+  id: 385
+  time: '2026-06-26T16:11:07.441990+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/1001
+- author: Aliwenko
+  changes:
+  - message: Forester and faction USD shops
+    type: Add
+  id: 386
+  time: '2026-06-26T19:38:02.662746+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/1008
+- author: SnekiChaos
+  changes:
+  - message: Fixed PVP Flags for Eco Compound
+    type: Tweak
+  - message: Fixed some unpowered objects around the Compound
+    type: Tweak
+  - message: Labeled some doors for immersion
+    type: Tweak
+  - message: Added divider to Eco counter
+    type: Tweak
+  - message: Added few minor details to spruce up the Eco Compound
+    type: Tweak
+  - message: Switched old unused Stash for one from Yantar Bunker.
+    type: Tweak
+  id: 387
+  time: '2026-06-27T11:51:19.125717+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/1011
+- author: Llfiend
+  changes:
+  - message: SCAR-H nerf
+    type: Tweak
+  - message: Galatz adjustment
+    type: Tweak
+  id: 388
+  time: '2026-06-27T18:13:18.545325+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/1009
+- author: Nox38
+  changes:
+  - message: Removed armor from August and August-M raincoats.
+    type: Remove
+  id: 389
+  time: '2026-06-29T00:31:24.360761+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/1012
+- author: Llfiend
+  changes:
+  - message: T4 armor changes
+    type: Tweak
+  id: 390
+  time: '2026-06-29T03:53:04.675806+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/1015
+- author: Llfiend
+  changes:
+  - message: No more stam dmg from bullets
+    type: Remove
+  id: 391
+  time: '2026-06-30T08:08:43.442108+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/1019
+- author: Llfiend
+  changes:
+  - message: Silencer changes
+    type: Tweak
+  id: 392
+  time: '2026-06-30T15:38:33.027171+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/1020
+- author: crocodilecarousel
+  changes:
+  - message: Journalist RCBZ
+    type: Add
+  - message: A few additions to the renegade tooth shop
+    type: Add
+  id: 393
+  time: '2026-07-01T16:15:41.356947+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/1016
+- author: crocodilecarousel
+  changes:
+  - message: Adds new scarves to shops
+    type: Add
+  id: 394
+  time: '2026-07-01T16:26:43.774933+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/1018
+- author: Mooringt
+  changes:
+  - message: OC-14-A1 7,62x39mm
+    type: Add
+  id: 395
+  time: '2026-07-01T16:28:36.458699+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/1017
+- author: Llfiend
+  changes:
+  - message: Silencers now silence UP CLOSE TOO!!!!
+    type: Tweak
+  id: 396
+  time: '2026-07-01T21:04:36.632244+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/1021
+- author: dallaszzz
+  changes:
+  - message: Removes itemslot comp from a paper in bar
+    type: Fix
+  id: 397
+  time: '2026-07-02T22:43:15.733438+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/1022
+- author: crocodilecarousel
+  changes:
+  - message: Medical bundles added to the Igor warzone shop
+    type: Add
+  - message: High tier gear added to Military premium shop
+    type: Add
+  - message: Gear added to some dollar vends
+    type: Add
+  - message: Forester now buys all high tier artifacts
+    type: Fix
+  - message: General shop updates
+    type: Tweak
+  - message: Ammo costs lowered
+    type: Tweak
+  - message: Jerky sell price lowered
+    type: Tweak
+  id: 398
+  time: '2026-07-03T19:05:31.253485+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/1023
+- author: TheOverwatchVoice
+  changes:
+  - message: Garbage and Cordon checkpoints
+    type: Tweak
+  - message: Fixed some teleports of Agro, Mbase and Garbage
+    type: Fix
+  id: 399
+  time: '2026-07-03T20:39:00.275831+00:00'
+  url: https://github.com/stalker-14-EN/stalker-14-EN/pull/1024
 Name: Stalker
 Order: -1

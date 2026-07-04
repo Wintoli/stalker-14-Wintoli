@@ -63,3 +63,55 @@
     stampState: "paper_stamp-hos"
   - type: Sprite
     state: stamp-syndicate
+
+- type: entity
+  name: Sidorovich's Stamp
+  parent: RubberStampBase
+  id: RubberStampSidorovich
+  suffix: DO NOT MAP, ST
+  components:
+  - type: Stamp
+    stampedName: stamp-component-stamped-name-sidorovich
+    stampedColor: "#000000FF"
+    stampState: "paper_stamp-greytide"
+  - type: Sprite
+    state: stamp-trader
+
+- type: entity
+  name: Barman's Stamp
+  parent: RubberStampBase
+  id: RubberStampBarman
+  suffix: DO NOT MAP, ST
+  components:
+  - type: Stamp
+    stampedName: stamp-component-stamped-name-barman
+    stampedColor: "#000000FF"
+    stampState: "paper_stamp-greytide"
+  - type: Sprite
+    state: stamp-trader
+
+- type: entity
+  name: Kesha's Stamp
+  parent: RubberStampBase
+  id: RubberStampKesha
+  suffix: DO NOT MAP, ST
+  components:
+  - type: Stamp
+    stampedName: stamp-component-stamped-name-kesha
+    stampedColor: "#000000FF"
+    stampState: "paper_stamp-greytide"
+  - type: Sprite
+    state: stamp-trader
+
+- type: entity
+  name: Forester's Stamp
+  parent: RubberStampBase
+  id: RubberStampForester
+  suffix: DO NOT MAP, ST
+  components:
+  - type: Stamp
+    stampedName: stamp-component-stamped-name-forester
+    stampedColor: "#285C11FF"
+    stampState: "paper_stamp-centcom"
+  - type: Sprite
+    state: stamp-centcom

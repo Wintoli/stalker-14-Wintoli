@@ -50,13 +50,13 @@
           path: /Audio/_Stalker_EN/Mutants/lyingfigure_death.ogg
   - type: Butcherable
     spawned:
-    - id: STFoodMeatSalo #Or some other kind of meat? or a new part, and parent it so it's easy to implement
+    - id: STCraftHideT2 # I'd like to make an actual unique part in the future
       amount: 1
   - type: STWeight
     self: 65
   - type: MovementSpeedModifier
     baseWalkSpeed: 2.5
-    baseSprintSpeed: 3.5
+    baseSprintSpeed: 3.2
   - type: MeleeWeapon
     attackRate: 0.7
     angle: 30
@@ -73,13 +73,13 @@
     wideAnimation: WeaponArcSmash
     damage:
       types:
-        Blunt: 25
+        Blunt: 20
         Burn: 10
         Toxin: 10
   - type: BonusMeleeDamage
     heavyDamageMultiplier: 1.5
   - type: StaminaDamageOnHit
-    damage: 45
+    damage: 15
   - type: Puller
     needsHands: false
   - type: NPCRetaliation
