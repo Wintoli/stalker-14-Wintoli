@@ -49,6 +49,48 @@
     legs: STClothingLegsPantsGray
     shoes: ClothingShoesSwat
 
+- type: job
+  id: StalkerLieutenantMercenary
+  name: job-mercenary-lieutenant
+  icon: merc
+  description: job-mercenary-lieutenant-desc
+  playTimeTracker: JobStalkerLieutenantMercenary
+  whitelisted: true
+  requirements:
+    # - !type:RoleTimeRequirement
+    #   role: JobStalkerHeadMercenary
+    #   time: 1
+    - !type:SpeciesRequirement
+      species:
+      - Human
+      - Dwarf
+  startingGear: StalkerHeadMercenaryGear
+  supervisors: job-lieutenant-mercenary-supervisor
+  canBeAntag: false
+  special:
+    - !type:AddComponentSpecial
+      components:
+        #- type: PersistentCraftAccess
+        - type: Access
+          tags:
+            - HeadMerc
+            - Merc
+        - type: Bands
+          band: Stalker
+          bandIcon: merc
+          bandProto: STMercenariesBand
+          bandRankId: 2
+        - type: BlockTackingHolyItems
+        - type: TeethPull
+          teethProto: ToothStalker
+          pullingItemTag: PliersStalker
+          teethCount: 3
+          initialTeeth: 3
+        - type: Vocal # stalker EN change start
+          sounds:
+            Male: MaleHumanMerc
+            Female: FemaleHumanMerc
+            Unsexed: MaleHumanMerc # stalker EN change end
 
 - type: job
   id: StalkerHeadMercenary
@@ -80,7 +122,7 @@
           band: Stalker
           bandIcon: merc
           bandProto: STMercenariesBand
-          bandRankId: 2
+          bandRankId: 3 # stalker EN change
         - type: BlockTackingHolyItems
         - type: TeethPull
           teethProto: ToothStalker
@@ -108,7 +150,8 @@
   name: Mercenaries
   factionId: Mercenaries
   maxMembers: 16
-  managingRankId: 2
+  managingRankId: 3
   hierarchy:
     1: StalkerMercenary
-    2: StalkerHeadMercenary
+    2: StalkerLieutenantMercenary
+    3: StalkerHeadMercenary 

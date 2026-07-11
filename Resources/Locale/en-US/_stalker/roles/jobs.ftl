@@ -51,6 +51,9 @@ job-mercenary-supervisor = the big merc that makes all of the rules
 job-head-mercenary = Mercenary Commander
 job-head-mercenary-desc = Your duty is to keep in touch with the headquarters and directly make decisions on the contract. You coordinate tactical operations, ensure effective interaction between faction members, and make operational decisions on the battlefield.
 job-head-mercenary-supervisor = yourself and the wealthiest clients
+job-mercenary-lieutenant = Mercenary Lieutenant
+job-mercenary-lieutenant-desc = You are the second in command to the Mercenary Commander. You coordinate squads and make the big decisions when they aren't around.
+job-mercenary-lieutenant-supervisor = The Mercenary Commander
 
 job-military-stalker = Military Stalker
 job-military-stalker-desc = Soldiers who have undergone special training after the experience of service in the Zone, or stalkers who have signed a contract with the army. You will endure and suffer, Victoria cruenta!

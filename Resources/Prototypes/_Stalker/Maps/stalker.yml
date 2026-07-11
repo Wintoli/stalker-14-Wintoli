@@ -46,6 +46,7 @@
             StalkerJournalist: [ 0, -1 ]
             # Mercenary
             StalkerMercenary: [ 0, -1 ]
+            StalkerLieutenantMercenary: [ 0, -1 ] # stalker-en-change
             StalkerHeadMercenary: [ 0, -1 ]
             # United Nations
             StalkerUN:  [0, -1]

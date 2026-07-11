@@ -119,6 +119,9 @@
 - type: playTimeTracker
   id: JobStalkerHeadMercenary
 
+- type: playTimeTracker # EN change - start
+  id: JobStalkerLieutenantMercenary # EN change - end
+
 - type: playTimeTracker
   id: JobStalkerClown
 
